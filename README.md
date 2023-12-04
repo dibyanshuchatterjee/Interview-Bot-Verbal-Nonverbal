@@ -1,5 +1,9 @@
 # Interview Prep Bot
 
+# Check out the working version of the app here:
+## https://interview-bot-verbal-nonverbal-eam3i9niz8jcqnqjnwrubg.streamlit.app/
+### Note: Be sure to have your openai api token handy
+
 ## This module aids in an interview prep for any given company. 
 ## It provides with two kinds of interview opportunity, one being, verbal, and the other one being the traditional problem-solving (nonverbal) session
 ## Click on the start fresh button at the end of homepage to refresh the whole app.
