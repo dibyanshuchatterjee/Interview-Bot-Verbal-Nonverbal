@@ -12,6 +12,19 @@ from gtts import gTTS
 # from htmlTemplates import css, bot_template, user_template
 
 
+# List of directory names to be created
+dir_names = ['audio', 'data', 'response']
+
+for dir_name in dir_names:
+    # Check if the directory already exists
+    if not os.path.exists(dir_name):
+        # Create the directory
+        os.makedirs(dir_name)
+        print(f"Directory {dir_name} created.")
+    else:
+        print(f"Directory {dir_name} already exists.")
+
+
 def check_openai_api_key(api_key):
     openai.api_key = api_key
     try:
@@ -95,8 +108,6 @@ if st.sidebar.button('submit'):
         f.write(f'OPENAI_API_KEY="{openai_api_key}"')
     load_dotenv()
 st.write("# Let's Prepare You For That Interview!")
-
-st.sidebar.success("Select a demo above.")
 
 with st.sidebar:
     st.subheader("Upload Resume")
