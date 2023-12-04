@@ -1,6 +1,6 @@
 openai==1.3.7
 PyPDF2
-dotenv
+python-dotenv
 llama_index
 gtts
 
